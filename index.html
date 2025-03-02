@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Washoni is launching soon! The revolutionary platform connecting customers with skilled tailors while providing tailors with powerful business management tools.">
+    <title>Washoni - Coming Soon | Connect with Tailors & Grow Your Tailoring Business</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e67e22;
+            --accent: #3498db;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #27ae60;
+            --danger: #e74c3c;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: #333;
+            background-color: #fff;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 2rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #d35400;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--secondary);
+            color: var(--secondary);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--secondary);
+            color: white;
+        }
+        
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('/api/placeholder/1200/600') center center/cover;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .coming-soon {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .countdown-item {
+            text-align: center;
+        }
+        
+        .countdown-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--secondary);
+            line-height: 1;
+        }
+        
+        .countdown-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .notify-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .notify-form input {
+            flex: 1;
+            padding: 0.8rem 1rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .features {
+            padding: 5rem 0;
+            background-color: var(--light);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .section-title p {
+            max-width: 600px;
+            margin: 0 auto;
+            color: #666;
+        }
+        
+        .audience-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .audience-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .audience-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .audience-icon {
+            font-size: 4rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .audience-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+        
+        .audience-card ul {
+            text-align: left;
+            list-style-position: inside;
+            margin-bottom: 1.5rem;
+        }
+        
+        .audience-card ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .preview-section {
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .preview-image {
+            margin: 3rem auto;
+            max-width: 800px;
+            position: relative;
+        }
+        
+        .preview-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .social-proof {
+            padding: 5rem 0;
+            background-color: var(--light);
+            text-align: center;
+        }
+        
+        .testimonial-placeholder {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: 3rem auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .testimonial-placeholder h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-placeholder p {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .social-icon {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 1.5rem;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+        
+        .social-icon:hover {
+            background-color: var(--secondary);
+        }
+        
+        .faq {
+            padding: 5rem 0;
+        }
+        
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .faq-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-item details {
+            width: 100%;
+        }
+        
+        .faq-item summary {
+            cursor: pointer;
+            padding: 0.5rem 0;
+            position: relative;
+            list-style: none;
+        }
+        
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        .faq-item summary::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 0.5rem;
+            font-size: 1.5rem;
+            color: var(--secondary);
+            transition: transform 0.3s;
+        }
+        
+        .faq-item details[open] summary::after {
+            content: '−';
+        }
+        
+        .faq-item h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin: 0;
+        }
+        
+        .faq-item p {
+            color: #666;
+            margin-top: 1rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--secondary);
+        }
+        
+        .cta {
+            padding: 5rem 0;
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta p {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+        }
+        
+        footer {
+            background-color: #1a252f;
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .footer-content {
+            text-align: center;
+        }
+        
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-logo span {
+            color: var(--secondary);
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .footer-links a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .social-link {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #2c3e50;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+        
+        .social-link:hover {
+            background-color: var(--secondary);
+        }
+        
+        .copyright {
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #666;
+            transition: color 0.3s;
+        }
+        
+        .close-modal:hover {
+            color: var(--danger);
+        }
+        
+        .success-message {
+            color: var(--success);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .modal-title {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .modal p {
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+            }
+            
+            nav ul li {
+                margin: 0 0.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .notify-form {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .countdown {
+                gap: 1rem;
+            }
+            
+            .countdown-number {
+                font-size: 2rem;
+            }
+            
+            .audience-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Wash<span>oni</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#preview">Preview</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="coming-soon">Coming Soon</p>
+                <h1>Connecting Customers with Tailors</h1>
+                <p>Washoni is the ultimate platform that connects people seeking tailoring services with skilled tailors, while providing tailors with powerful tools to manage and grow their businesses.</p>
+                
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="days">60</div>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="hours">12</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="minutes">34</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="seconds">56</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+                
+                <p>Be the first to know when we launch. Get early access and exclusive offers.</p>
+                
+                <form class="notify-form" id="early-access-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn">Get Early Access</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>One Platform, Two Solutions</h2>
+                <p>Whether you're looking for tailoring services or you're a tailor managing your business, Washoni has you covered.</p>
+            </div>
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <div class="audience-icon">👔</div>
+                    <h3>For Customers</h3>
+                    <ul>
+                        <li>Find skilled tailors in your area</li>
+                        <li>Share your measurements securely across tailors</li>
+                        <li>Book appointments and track orders in real-time</li>
+                        <li>Browse tailor portfolios and reviews</li>
+                        <li>Shop for ready-made garments and accessories</li>
+                        <li>Receive personalized style recommendations</li>
+                    </ul>
+                    <a href="#" class="btn" onclick="showModal('customer')">Join Waitlist</a>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">✂️</div>
+                    <h3>For Tailors</h3>
+                    <ul>
+                        <li>Manage customer orders and measurements</li>
+                        <li>Track inventory and material usage</li>
+                        <li>Process sales through an integrated POS system</li>
+                        <li>Showcase your work to attract new customers</li>
+                        <li>Run your shop operations efficiently</li>
+                        <li>Grow your business with data-driven insights</li>
+                    </ul>
+                    <a href="#" class="btn" onclick="showModal('tailor')">Join Waitlist</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="preview" class="preview-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sneak Peek</h2>
+                <p>Here's an exclusive preview of what's coming. Washoni is set to revolutionize the tailoring industry.</p>
+            </div>
+            <div class="preview-image">
+                <img src="images/speak_peak.svg" alt="Washoni App Interface Preview">
+            </div>
+            <a href="#" class="btn" onclick="showModal('general')">Get Early Access</a>
+        </div>
+    </section>
+
+    <section class="social-proof">
+        <div class="container">
+            <div class="section-title">
+                <h2>Join Our Community</h2>
+                <p>Follow us on social media for updates, behind-the-scenes content, and tailoring insights.</p>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="margin-top: 5px;">
+                        <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter/X">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="margin-top: 5px;">
+                        <path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="margin-top: 5px;">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="margin-top: 5px;">
+                        <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="testimonial-placeholder">
+                <h3>What Beta Testers Are Saying</h3>
+                <p>"As someone who values well-fitted clothes, I can already see how Washoni will change the game. No more hunting for reliable tailors or repeating measurements!"</p>
+                <p>- Alex J., Early Access User</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about Washoni before we launch.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <details>
+                        <summary><h3 style="display: inline;">When exactly will Washoni launch?</h3></summary>
+                        <p>Washoni is scheduled to launch in May 2025. Join our waitlist to be the first to know the exact launch date and get early access.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary><h3 style="display: inline;">Will Washoni be available in my city?</h3></summary>
+                        <p>We're launching initially in major metropolitan areas and will be expanding quickly. Sign up for early access to see if your city is included in our first phase.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary><h3 style="display: inline;">Is the app free for customers?</h3></summary>
+                        <p>Yes, the basic version of Washoni will be free for customers. We'll also offer a premium subscription with additional features for fashion enthusiasts.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary><h3 style="display: inline;">How much does it cost for tailors?</h3></summary>
+                        <p>For tailors, we'll offer tiered pricing based on business size and needs. Early adopters will receive special discounted rates. Join our waitlist for details.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary><h3 style="display: inline;">How does the measurement sharing work?</h3></summary>
+                        <p>Customers can securely store their measurements in the app and choose which tailors to share them with. This eliminates the need for repeated measuring sessions.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary><h3 style="display: inline;">Can I integrate Washoni with my existing systems?</h3></summary>
+                        <p>Yes, Washoni will offer API access for seamless integration with popular accounting, inventory, and POS systems for our Professional and Enterprise tier users.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Be Part of the Revolution</h2>
+            <p>Join the Washoni community today and be first in line when we launch. Early adopters get exclusive benefits.</p>
+            <a href="#" class="btn" onclick="showModal('general')">Join Waitlist Now</a>
+            <p style="margin-top: 2rem; font-size: 1rem;">Want to know more? <a href="mailto:info@washoni.com" style="color: var(--secondary);">Contact Us</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Wash<span>oni</span></div>
+                <p>The ultimate platform connecting people with talented tailors while providing tailors with powerful business management tools.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">f</a>
+                    <a href="#" class="social-link">t</a>
+                    <a href="#" class="social-link">i</a>
+                    <a href="#" class="social-link">y</a>
+                </div>
+                <div class="footer-links">
+                    <a href="about/">About Us</a>
+                    <a href="contact/">Contact</a>
+                    <a href="privacy-policy/">Privacy Policy</a>
+                    <a href="terms-of-service/">Terms of Service</a>
+                </div>
+                <p class="copyright">&copy; 2025 Washoni. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2 class="modal-title" id="modal-title">Join Our Waitlist</h2>
+            <p id="modal-description">Be the first to know when Washoni launches. Get early access and exclusive offers.</p>
+            <form id="modal-form">
+                <input type="email" placeholder="Email Address" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 5px;" required>
+                <input type="text" placeholder="Name" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 5px;" required>
+                <div id="tailor-fields" style="display: none;">
+                    <input type="text" placeholder="Business Name" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 5px;">
+                    <select style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 5px;">
+                        <option value="">Business Size</option>
+                        <option value="solo">Solo Tailor</option>
+                        <option value="small">Small Shop (2-5 people)</option>
+                        <option value="medium">Medium Business (6-20 people)</option>
+                        <option value="large">Large Business (21+ people)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Join Waitlist</button>
+            </form>
+            <div id="success-message" style="display: none;">
+                <p class="success-message">Thank you for joining our waitlist!</p>
+                <p>We'll be in touch soon with exclusive updates and early access information.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p>Help spread the word:</p>
+                    <div class="social-icons" style="margin-top: 1rem;">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="margin-top: 5px;">
+                                <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter/X">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="margin-top: 5px;">
+                                <path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="margin-top: 5px;">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            // Set the target date (May 1, 2025)
+            const targetDate = new Date("May 1, 2025 00:00:00").getTime();
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+            
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+            
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+            
+            if (difference < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("days").innerText = "0";
+                document.getElementById("hours").innerText = "0";
+                document.getElementById("minutes").innerText = "0";
+                document.getElementById("seconds").innerText = "0";
+            }
+        }
+        
+        const countdownInterval = setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Modal Functionality
+        function showModal(type) {
+            const modal = document.getElementById("signup-modal");
+            const modalTitle = document.getElementById("modal-title");
+            const modalDescription = document.getElementById("modal-description");
+            const tailorFields = document.getElementById("tailor-fields");
+            const successMessage = document.getElementById("success-message");
+            const modalForm = document.getElementById("modal-form");
+            
+            // Reset form
+            modalForm.style.display = "block";
+            successMessage.style.display = "none";
+            
+            if (type === "customer") {
+                modalTitle.innerText = "Join Customer Waitlist";
+                modalDescription.innerText = "Be the first to find the perfect tailor for your needs. Get early access to Washoni and exclusive offers.";
+                tailorFields.style.display = "none";
+            } else if (type === "tailor") {
+                modalTitle.innerText = "Join Tailor Waitlist";
+                modalDescription.innerText = "Get a head start on growing your tailoring business. Early adopters receive special benefits and discounted rates.";
+                tailorFields.style.display = "block";
+            } else {
+                modalTitle.innerText = "Join Our Waitlist";
+                modalDescription.innerText = "Be the first to know when Washoni launches. Get early access and exclusive offers.";
+                tailorFields.style.display = "none";
+            }
+            
+            modal.style.display = "flex";
+        }
+        
+        function closeModal() {
+            document.getElementById("signup-modal").style.display = "none";
+        }
+        
+        // Submit Form
+        document.getElementById("modal-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            // In a real implementation, you would send the form data to your server
+            // For demo purposes, we'll just show the success message
+            this.style.display = "none";
+            document.getElementById("success-message").style.display = "block";
+            
+            // You would typically use fetch() to submit the form data to your backend
+            // Example:
+            // fetch('your-api-endpoint', {
+            //     method: 'POST',
+            //     body: new FormData(this)
+            // })
+            // .then(response => response.json())
+            // .then(data => {
+            //     this.style.display = "none";
+            //     document.getElementById("success-message").style.display = "block";
+            // })
+            // .catch(error => console.error('Error:', error));
+        });
+        
+        // Early Access Form
+        document.getElementById("early-access-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            showModal('general');
+        });
+        
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById("signup-modal");
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>

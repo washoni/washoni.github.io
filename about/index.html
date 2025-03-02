@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Washoni - the revolutionary platform connecting customers with tailors across Kenya while providing tailors with powerful business management tools.">
+    <title>About Us - Washoni</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e67e22;
+            --accent: #3498db;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #27ae60;
+            --danger: #e74c3c;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: #333;
+            background-color: #fff;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 2rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #d35400;
+        }
+        
+        .page-header {
+            padding-top: 8rem;
+            padding-bottom: 3rem;
+            background-color: var(--light);
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .page-header p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #666;
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+        
+        .section-title p {
+            max-width: 700px;
+            margin: 0 auto;
+            color: #666;
+        }
+        
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 3rem;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-text h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 3rem auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            background-color: var(--primary);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1.5px;
+        }
+        
+        .timeline-item {
+            padding: 1rem 2.5rem;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 3px solid var(--secondary);
+            border-radius: 50%;
+            top: 22px;
+            z-index: 1;
+        }
+        
+        .timeline-item:nth-child(odd)::after {
+            right: -13px;
+        }
+        
+        .timeline-item:nth-child(even)::after {
+            left: -13px;
+        }
+        
+        .timeline-item-content {
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .timeline-item-content h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .timeline-item-content .date {
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .team {
+            background-color: var(--light);
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .team-member {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+        
+        .team-member img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .team-member-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .team-member-info h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .team-member-info .role {
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .team-member-info p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .values {
+            padding: 5rem 0;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .value-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        
+        .value-icon {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .value-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .contact {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+        
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact p {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        
+        footer {
+            background-color: #1a252f;
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-col h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+            height: 2px;
+            background-color: var(--secondary);
+        }
+        
+        .footer-col p {
+            color: #bbb;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #2c3e50;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+        
+        .social-link:hover {
+            background-color: var(--secondary);
+        }
+        
+        .copyright {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+            }
+            
+            nav ul li {
+                margin: 0 0.5rem;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item:nth-child(odd) {
+                text-align: left;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            
+            .timeline-item:nth-child(odd)::after,
+            .timeline-item:nth-child(even)::after {
+                left: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">Wash<span>oni</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/privacy-policy">Privacy</a></li>
+                        <li><a href="/terms-of-service">Terms</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>About Washoni</h1>
+            <p>Connecting customers with tailors across Kenya while providing tailors with powerful business management tools.</p>
+        </div>
+    </section>
+
+    <section class="about-story">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Story</h2>
+                <p>How Washoni came to be and our mission to transform the tailoring industry in Kenya.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Revolutionizing the Tailoring Industry</h3>
+                    <p>Washoni was born out of a simple observation: finding reliable tailors in Kenya is challenging, while talented tailors struggle to efficiently manage their businesses and reach new customers.</p>
+                    <p>Our founder, Zaddoch Ponde, experienced these frustrations firsthand. After struggling to find a reliable tailor for a wedding suit and witnessing his family's tailoring business face operational challenges, Zaddoch recognized an opportunity to bridge this gap.</p>
+                    <p>In 2024, with a team of passionate technologists and tailoring experts, Washoni was created to connect customers with skilled tailors while providing tailors with the business tools they need to thrive in the digital age.</p>
+                    <p>Today, Washoni is on a mission to digitize and elevate the tailoring industry across Kenya and eventually all of Africa, preserving the craftsmanship of traditional tailoring while embracing modern technology.</p>
+                </div>
+                <div class="about-image">
+                    <img src="/api/placeholder/500/400" alt="Washoni Founder with local tailors">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="journey">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Journey</h2>
+                <p>The key milestones in Washoni's development and growth.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-item-content">
+                        <span class="date">January 2024</span>
+                        <h3>Idea Inception</h3>
+                        <p>The concept for Washoni was born, with initial research into the tailoring market in Kenya.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-item-content">
+                        <span class="date">March 2024</span>
+                        <h3>Team Formation</h3>
+                        <p>Our founding team came together, combining expertise in technology, business, and tailoring.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-item-content">
+                        <span class="date">May 2024</span>
+                        <h3>Initial Funding</h3>
+                        <p>Secured seed funding to develop the Washoni platform and begin working with early adopter tailors.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-item-content">
+                        <span class="date">August 2024</span>
+                        <h3>Beta Testing</h3>
+                        <p>Started beta testing with a select group of tailors and customers in Nairobi.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-item-content">
+                        <span class="date">November 2024</span>
+                        <h3>Expansion Planning</h3>
+                        <p>Began developing strategy for expansion to additional cities across Kenya.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-item-content">
+                        <span class="date">May 2025</span>
+                        <h3>Official Launch</h3>
+                        <p>Scheduled full public launch of the Washoni platform across Kenya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Team</h2>
+                <p>The passionate individuals behind Washoni who are dedicated to transforming the tailoring industry.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="/api/placeholder/300/300" alt="Zaddoch Ponde">
+                    <div class="team-member-info">
+                        <h3>Zaddoch Ponde</h3>
+                        <span class="role">Founder & CEO</span>
+                        <p>Visionary entrepreneur with a background in both technology and the tailoring industry.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/300/300" alt="Wanjiku Mwangi">
+                    <div class="team-member-info">
+                        <h3>Wanjiku Mwangi</h3>
+                        <span class="role">Chief Technology Officer</span>
+                        <p>Tech leader with extensive experience developing mobile applications for the African market.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/300/300" alt="David Ochieng">
+                    <div class="team-member-info">
+                        <h3>David Ochieng</h3>
+                        <span class="role">Head of Tailoring Relations</span>
+                        <p>Third-generation master tailor bringing industry expertise and connections.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/300/300" alt="Amina Hassan">
+                    <div class="team-member-info">
+                        <h3>Amina Hassan</h3>
+                        <span class="role">Chief Marketing Officer</span>
+                        <p>Marketing expert specializing in connecting traditional industries with digital solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="values">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Values</h2>
+                <p>The core principles that guide everything we do at Washoni.</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Community Connection</h3>
+                    <p>We believe in building meaningful connections between customers and tailors, strengthening local economies and preserving craftsmanship.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">⚙️</div>
+                    <h3>Technology Empowerment</h3>
+                    <p>We leverage technology to empower traditional businesses, making them more efficient and accessible in the digital age.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🌍</div>
+                    <h3>African Innovation</h3>
+                    <p>We're proud to build solutions specifically designed for African markets, addressing unique local challenges and opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Join Our Journey</h2>
+            <p>Be part of the revolution that's transforming the tailoring industry in Kenya.</p>
+            <a href="/" class="btn">Get Early Access</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Washoni</h3>
+                    <p>Connecting customers with tailors across Kenya while providing tailors with powerful business management tools.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-top: 12px;">
+                                <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter/X">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-top: 12px;">
+                                <path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-top: 12px;">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-top: 12px;">
+                                <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li>Email: info@washoni.com</li>
+                        <li>Phone: +254 712 345 678</li>
+                        <li>Address: The Promenade, Westlands, Nairobi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Washoni. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

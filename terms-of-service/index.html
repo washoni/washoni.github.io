@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Washoni Terms of Service - Agreement governing the use of the Washoni platform connecting customers with tailors.">
+    <title>Terms of Service - Washoni</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e67e22;
+            --accent: #3498db;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #27ae60;
+            --danger: #e74c3c;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: #333;
+            background-color: #fff;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 2rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary);
+        }
+        
+        .page-header {
+            padding-top: 8rem;
+            padding-bottom: 3rem;
+            background-color: var(--light);
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .page-header p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #666;
+        }
+        
+        .terms-content {
+            padding: 4rem 0;
+        }
+        
+        .terms-content h2 {
+            color: var(--primary);
+            margin: 2rem 0 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .terms-content h3 {
+            color: var(--primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.4rem;
+        }
+        
+        .terms-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .terms-content ul, .terms-content ol {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
+        
+        .terms-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .terms-content .emphasis {
+            background-color: var(--light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .terms-toc {
+            background-color: var(--light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .terms-toc h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .terms-toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .terms-toc li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .terms-toc a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .terms-toc a:hover {
+            color: var(--secondary);
+        }
+        
+        .update-info {
+            background-color: var(--light);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            font-style: italic;
+            color: #666;
+        }
+        
+        footer {
+            background-color: #1a252f;
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-col h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+            height: 2px;
+            background-color: var(--secondary);
+        }
+        
+        .footer-col p {
+            color: #bbb;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #2c3e50;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+        
+        .social-link:hover {
+            background-color: var(--secondary);
+        }
+        
+        .copyright {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+            }
+            
+            nav ul li {
+                margin: 0 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">Wash<span>oni</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/privacy-policy">Privacy</a></li>
+                        <li><a href="/terms-of-service">Terms</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Terms of Service</h1>
+            <p>Please read these terms carefully before using our services.</p>
+        </div>
+    </section>
+
+    <section class="terms-content">
+        <div class="container">
+            <div class="update-info">
+                <p>Last Updated: February 15, 2025</p>
+            </div>
+            
+            <div class="terms-toc">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#agreement">1. Agreement to Terms</a></li>
+                    <li><a href="#services">2. Description of Services</a></li>
+                    <li><a href="#accounts">3. Accounts and Registration</a></li>
+                    <li><a href="#user-content">4. User Content and Conduct</a></li>
+                    <li><a href="#fees-payment">5. Fees and Payment</a></li>
+                    <li><a href="#intellectual-property">6. Intellectual Property Rights</a></li>
+                    <li><a href="#third-party-links">7. Third-Party Links and Services</a></li>
+                    <li><a href="#termination">8. Termination</a></li>
+                    <li><a href="#disclaimers">9. Disclaimers</a></li>
+                    <li><a href="#limitation-liability">10. Limitation of Liability</a></li>
+                    <li><a href="#dispute-resolution">11. Dispute Resolution</a></li>
+                    <li><a href="#general">12. General Terms</a></li>
+                    <li><a href="#contact-us">13. Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div id="agreement">
+                <h2>1. Agreement to Terms</h2>
+                <p>These Terms of Service ("Terms") constitute a legally binding agreement between you and Washoni ("we," "our," or "us") regarding your use of our website, mobile application, and services (collectively, the "Services").</p>
+                <p>By accessing or using our Services, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree to these Terms, you must not access or use our Services.</p>
+                <p>We may modify these Terms at any time. If we do so, we will notify you by updating the "Last Updated" date at the top of these Terms and, in some cases, provide you with additional notice. Your continued use of the Services after such changes indicates your acceptance of the updated Terms.</p>
+            </div>
+            
+            <div id="services">
+                <h2>2. Description of Services</h2>
+                <p>Washoni provides a platform that connects customers seeking tailoring services with tailors, while also offering tailors business management tools. Our Services include, but are not limited to:</p>
+                <ul>
+                    <li>Enabling customers to find tailors based on location, specialization, and ratings</li>
+                    <li>Allowing customers to store and share their measurements with tailors</li>
+                    <li>Facilitating appointments, orders, and payments between customers and tailors</li>
+                    <li>Providing tailors with tools to manage customers, orders, inventory, and shop operations</li>
+                    <li>Offering analytics and business insights for tailors</li>
+                </ul>
+                <p>We reserve the right to modify, suspend, or discontinue any aspect of the Services at any time, with or without notice.</p>
+            </div>
+            
+            <div id="accounts">
+                <h2>3. Accounts and Registration</h2>
+                <h3>3.1 Account Creation</h3>
+                <p>To access certain features of our Services, you must create an account. You agree to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate, current, and complete.</p>
+                
+                <h3>3.2 Account Responsibilities</h3>
+                <p>You are responsible for:</p>
+                <ul>
+                    <li>Maintaining the confidentiality of your account credentials</li>
+                    <li>All activities that occur under your account</li>
+                    <li>Notifying us immediately of any unauthorized use of your account</li>
+                </ul>
+                <p>We reserve the right to suspend or terminate your account if any information provided during registration or thereafter proves to be inaccurate, false, or misleading.</p>
+                
+                <h3>3.3 Account Types</h3>
+                <p>We offer different types of accounts for customers and tailors, each with specific features and functionalities.</p>
+                <p><strong>Customer Accounts:</strong> Allow individuals to find tailors, store measurements, book appointments, and place orders.</p>
+                <p><strong>Tailor Accounts:</strong> Enable tailors to manage their business, receive orders, process payments, and utilize business management tools.</p>
+            </div>
+            
+            <div id="user-content">
+                <h2>4. User Content and Conduct</h2>
+                <h3>4.1 User Content</h3>
+                <p>"User Content" refers to any content that users submit, post, or display on our Services, including but not limited to text, images, videos, reviews, and measurements.</p>
+                <p>By submitting User Content, you grant us a worldwide, non-exclusive, royalty-free license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such content in connection with providing and promoting our Services.</p>
+                
+                <h3>4.2 Content Restrictions</h3>
+                <p>You agree not to post User Content that:</p>
+                <ul>
+                    <li>Is false, misleading, or deceptive</li>
+                    <li>Is defamatory, obscene, pornographic, vulgar, or offensive</li>
+                    <li>Promotes discrimination, bigotry, racism, hatred, harassment, or harm against any individual or group</li>
+                    <li>Infringes any patent, trademark, trade secret, copyright, or other intellectual property rights</li>
+                    <li>Violates the legal rights (including privacy rights) of others</li>
+                    <li>Contains software viruses or any other code designed to interrupt, destroy, or limit the functionality of any computer software or hardware</li>
+                    <li>Constitutes unauthorized or unsolicited advertising, promotional materials, or any other form of spam</li>
+                </ul>
+                
+                <h3>4.3 Prohibited Conduct</h3>
+                <p>You agree not to:</p>
+                <ul>
+                    <li>Use our Services for any illegal purpose</li>
+                    <li>Impersonate any person or entity or falsely state or misrepresent your affiliation with a person or entity</li>
+                    <li>Interfere with or disrupt the Services or servers or networks connected to the Services</li>
+                    <li>Attempt to gain unauthorized access to any portion of the Services or any other accounts, computer systems, or networks connected to the Services</li>
+                    <li>Use any robot, spider, or other automated device to access the Services</li>
+                    <li>Harvest or collect email addresses or other contact information of other users</li>
+                    <li>Create multiple accounts for abusive purposes</li>
+                </ul>
+                
+                <div class="emphasis">
+                    <p>We reserve the right, but are not obligated, to monitor User Content and remove any content that violates these Terms or that we find objectionable for any reason, without prior notice.</p>
+                </div>
+            </div>
+            
+            <div id="fees-payment">
+                <h2>5. Fees and Payment</h2>
+                <h3>5.1 Fees</h3>
+                <p>We may charge fees for certain aspects of our Services. All fees are stated in Kenyan Shillings (KES) unless otherwise specified.</p>
+                <p>For tailors, we offer different subscription plans with various features and pricing. Details about our subscription plans are available on our website.</p>
+                <p>For customers, basic access to our platform is free, but we may charge fees for premium features or services.</p>
+                
+                <h3>5.2 Payment</h3>
+                <p>You agree to pay all applicable fees and provide accurate billing information. Payment methods accepted include mobile money, credit/debit cards, and bank transfers.</p>
+                <p>For subscription plans, we will bill you in advance on a recurring basis. You authorize us to charge your chosen payment method for all applicable fees.</p>
+                
+                <h3>5.3 Refunds</h3>
+                <p>Our refund policy varies depending on the specific service or feature. Generally, subscription fees are non-refundable except as required by law or as explicitly stated in these Terms.</p>
+                
+                <h3>5.4 Taxes</h3>
+                <p>All fees are exclusive of all taxes, levies, or duties imposed by taxing authorities. You are responsible for all applicable taxes, including but not limited to value-added tax (VAT) and sales tax.</p>
+            </div>
+            
+            <div id="intellectual-property">
+                <h2>6. Intellectual Property Rights</h2>
+                <h3>6.1 Our Intellectual Property</h3>
+                <p>The Services, including all content, features, and functionality, are owned by Washoni, its licensors, or other providers and are protected by copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.</p>
+                <p>You are granted a limited, non-exclusive, non-transferable, and revocable license to access and use the Services for their intended purposes in accordance with these Terms.</p>
+                
+                <h3>6.2 Restrictions</h3>
+                <p>You may not:</p>
+                <ul>
+                    <li>Copy, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any of the material on our Services, except as expressly permitted</li>
+                    <li>Delete or alter any copyright, trademark, or other proprietary rights notices from copies of materials from the Services</li>
+                    <li>Access or use for any commercial purposes any part of the Services or any services or materials available through the Services</li>
+                </ul>
+                
+                <h3>6.3 Feedback</h3>
+                <p>If you provide us with any feedback or suggestions regarding the Services, you hereby assign to us all rights in such feedback and agree that we shall have the right to use such feedback and related information in any manner we deem appropriate.</p>
+            </div>
+            
+            <div id="third-party-links">
+                <h2>7. Third-Party Links and Services</h2>
+                <p>Our Services may contain links to third-party websites or services that are not owned or controlled by Washoni. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services.</p>
+                <p>You acknowledge and agree that Washoni shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such websites or services.</p>
+                <p>We strongly advise you to read the terms and conditions and privacy policies of any third-party websites or services that you visit.</p>
+            </div>
+            
+            <div id="termination">
+                <h2>8. Termination</h2>
+                <h3>8.1 Termination by You</h3>
+                <p>You may terminate your account at any time by following the instructions on our Services or by contacting us.</p>
+                
+                <h3>8.2 Termination by Us</h3>
+                <p>We may terminate or suspend your access to the Services immediately, without prior notice or liability, for any reason, including but not limited to:</p>
+                <ul>
+                    <li>Breach of these Terms</li>
+                    <li>Engaging in fraudulent, illegal, or harmful activities</li>
+                    <li>Failure to pay any fees when due</li>
+                    <li>At our sole discretion for any reason</li>
+                </ul>
+                
+                <h3>8.3 Effect of Termination</h3>
+                <p>Upon termination, your right to use the Services will immediately cease. All provisions of these Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.</p>
+            </div>
+            
+            <div id="disclaimers">
+                <h2>9. Disclaimers</h2>
+                <p>THE SERVICES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.</p>
+                <p>WASHONI EXPRESSLY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.</p>
+                <p>WE DO NOT WARRANT THAT:</p>
+                <ul>
+                    <li>THE SERVICES WILL FUNCTION UNINTERRUPTED, SECURE, OR AVAILABLE AT ANY PARTICULAR TIME OR LOCATION</li>
+                    <li>ANY ERRORS OR DEFECTS WILL BE CORRECTED</li>
+                    <li>THE SERVICES ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS</li>
+                    <li>THE RESULTS OF USING THE SERVICES WILL MEET YOUR REQUIREMENTS</li>
+                </ul>
+                <p>YOU UNDERSTAND AND AGREE THAT WE ARE NOT RESPONSIBLE FOR ANY TRANSACTIONS OR AGREEMENTS MADE BETWEEN CUSTOMERS AND TAILORS USING OUR PLATFORM. WE ARE SOLELY PROVIDING A PLATFORM TO CONNECT THESE PARTIES.</p>
+            </div>
+            
+            <div id="limitation-liability">
+                <h2>10. Limitation of Liability</h2>
+                <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL WASHONI, ITS AFFILIATES, DIRECTORS, EMPLOYEES, AGENTS, OR LICENSORS BE LIABLE FOR ANY INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES, INCLUDING WITHOUT LIMITATION DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES, THAT RESULT FROM THE USE OF, OR INABILITY TO USE, THE SERVICES.</p>
+                <p>UNDER NO CIRCUMSTANCES WILL WASHONI BE RESPONSIBLE FOR ANY DAMAGE, LOSS, OR INJURY RESULTING FROM HACKING, TAMPERING, OR OTHER UNAUTHORIZED ACCESS OR USE OF THE SERVICES OR YOUR ACCOUNT OR THE INFORMATION CONTAINED THEREIN.</p>
+                <p>IN NO EVENT SHALL OUR TOTAL LIABILITY TO YOU FOR ALL DAMAGES, LOSSES, OR CAUSES OF ACTION EXCEED THE AMOUNT YOU HAVE PAID TO WASHONI IN THE LAST SIX (6) MONTHS, OR KES 10,000, WHICHEVER IS GREATER.</p>
+                <p>THIS LIMITATION OF LIABILITY SECTION APPLIES WHETHER THE ALLEGED LIABILITY IS BASED ON CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY, OR ANY OTHER BASIS, EVEN IF WASHONI HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+            </div>
+            
+            <div id="dispute-resolution">
+                <h2>11. Dispute Resolution</h2>
+                <h3>11.1 Governing Law</h3>
+                <p>These Terms and your use of the Services shall be governed by and construed in accordance with the laws of Kenya, without regard to its conflict of law provisions.</p>
+                
+                <h3>11.2 Dispute Resolution</h3>
+                <p>Any dispute arising out of or relating to these Terms or the Services shall first be resolved through good faith negotiations between the parties. If the dispute cannot be resolved through negotiation, it shall be submitted to arbitration in Nairobi, Kenya, in accordance with the Arbitration Rules of the Nairobi Centre for International Arbitration.</p>
+                
+                <h3>11.3 Waiver of Class Actions</h3>
+                <p>You agree that any dispute resolution proceedings will be conducted only on an individual basis and not in a class, consolidated, or representative action.</p>
+            </div>
+            
+            <div id="general">
+                <h2>12. General Terms</h2>
+                <h3>12.1 Entire Agreement</h3>
+                <p>These Terms constitute the entire agreement between you and Washoni regarding your use of the Services and supersede all prior and contemporaneous written or oral agreements between you and Washoni.</p>
+                
+                <h3>12.2 Waiver</h3>
+                <p>Our failure to exercise or enforce any right or provision of these Terms shall not operate as a waiver of such right or provision.</p>
+                
+                <h3>12.3 Severability</h3>
+                <p>If any provision of these Terms is held to be invalid or unenforceable, such provision shall be struck and the remaining provisions shall be enforced.</p>
+                
+                <h3>12.4 Assignment</h3>
+                <p>You may not assign or transfer these Terms, by operation of law or otherwise, without our prior written consent. We may assign or transfer these Terms, at our sole discretion, without restriction.</p>
+                
+                <h3>12.5 Notices</h3>
+                <p>We may provide notices to you via email, regular mail, or postings on the Services. Notices to us should be sent to the address in the "Contact Us" section.</p>
+                
+                <h3>12.6 Force Majeure</h3>
+                <p>We shall not be liable for any delay or failure to perform resulting from causes outside our reasonable control, including but not limited to acts of God, war, terrorism, riots, embargoes, acts of civil or military authorities, fire, floods, accidents, pandemics, strikes, or shortages of transportation facilities, fuel, energy, labor, or materials.</p>
+            </div>
+            
+            <div id="contact-us">
+                <h2>13. Contact Us</h2>
+                <p>If you have any questions about these Terms, please contact us at:</p>
+                <p>
+                    Email: legal@washoni.com<br>
+                    Address: The Promenade, Westlands, Nairobi, Kenya<br>
+                    Phone: +254 712 345 678
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Washoni</h3>
+                    <p>Connecting customers with tailors across Kenya while providing tailors with powerful business management tools.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-top: 12px;">
+                                <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter/X">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-top: 12px;">
+                                <path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-top: 12px;">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-top: 12px;">
+                                <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li>Email: info@washoni.com</li>
+                        <li>Phone: +254 712 345 678</li>
+                        <li>Address: The Promenade, Westlands, Nairobi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Washoni. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
