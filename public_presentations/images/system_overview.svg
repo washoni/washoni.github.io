@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="500" fill="#f8f9fa" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Tailoring Business Management System</text>
+  
+  <!-- Core System Box -->
+  <rect x="250" y="80" width="300" height="120" fill="#4472c4" rx="10" ry="10" opacity="0.8" />
+  <text x="400" y="130" font-family="Arial" font-size="18" text-anchor="middle" fill="white" font-weight="bold">Core Platform</text>
+  <text x="400" y="160" font-family="Arial" font-size="14" text-anchor="middle" fill="white">User Management, Administration</text>
+  <text x="400" y="180" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Security, Accounting, Integration</text>
+  
+  <!-- Modules -->
+  <!-- Staff Management -->
+  <rect x="50" y="240" width="150" height="80" fill="#70ad47" rx="8" ry="8" opacity="0.8" />
+  <text x="125" y="275" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Staff Management</text>
+  <text x="125" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Attendance, Assignments</text>
+  <line x1="125" y1="240" x2="280" y2="160" stroke="#333" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Customer Management - WIDER -->
+  <rect x="220" y="240" width="180" height="80" fill="#ed7d31" rx="8" ry="8" opacity="0.8" />
+  <text x="310" y="275" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Customer Management</text>
+  <text x="310" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Profiles, Communications</text>
+  <line x1="310" y1="240" x2="350" y2="200" stroke="#333" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Order Processing -->
+  <rect x="420" y="240" width="150" height="80" fill="#5b9bd5" rx="8" ry="8" opacity="0.8" />
+  <text x="495" y="275" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Order Processing</text>
+  <text x="495" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Creation, Tracking, Billing</text>
+  <line x1="495" y1="240" x2="430" y2="160" stroke="#333" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Inventory Management - WIDER -->
+  <rect x="590" y="240" width="180" height="80" fill="#ffc000" rx="8" ry="8" opacity="0.8" />
+  <text x="680" y="275" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Inventory Management</text>
+  <text x="680" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Materials, Supplies</text>
+  <line x1="680" y1="240" x2="470" y2="160" stroke="#333" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- NEW: Shop Management Module -->
+  <rect x="310" y="340" width="180" height="80" fill="#c0504d" rx="8" ry="8" opacity="0.8" />
+  <text x="400" y="370" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Shop Management</text>
+  <text x="400" y="390" font-family="Arial" font-size="12" text-anchor="middle" fill="white">POS, Retail Products, Sales</text>
+  <line x1="400" y1="340" x2="400" y2="200" stroke="#333" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Sub-modules -->
+  <!-- Multi-location -->
+  <rect x="50" y="360" width="150" height="70" fill="#a5a5a5" rx="8" ry="8" opacity="0.8" />
+  <text x="125" y="390" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Multi-location Support</text>
+  <text x="125" y="410" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Management &amp; Coordination</text>
+  <line x1="125" y1="360" x2="125" y2="320" stroke="#333" stroke-width="2" />
+  
+  <!-- Supplier Management -->
+  <rect x="590" y="360" width="180" height="70" fill="#a5a5a5" rx="8" ry="8" opacity="0.8" />
+  <text x="680" y="390" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Supplier Management</text>
+  <text x="680" y="410" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Orders, Delivery, Quality</text>
+  <line x1="680" y1="360" x2="680" y2="320" stroke="#333" stroke-width="2" />
+  
+  <!-- Access Channels -->
+  <rect x="175" y="460" width="450" height="25" fill="#7030a0" rx="5" ry="5" opacity="0.8" />
+  <text x="400" y="477" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Access: Web Portal | Mobile App | Customer Portal | POS Terminal</text>
+</svg>

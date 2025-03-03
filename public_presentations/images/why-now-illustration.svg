@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 510" width="400" height="500">
+  <!-- Background -->
+  <rect width="400" height="510" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="200" y="40" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#2c3e50">Why Now?</text>
+  
+  <!-- Central Timeline - Extended to reach the bottom node -->
+  <line x1="200" y1="80" x2="200" y2="440" stroke="#2c3e50" stroke-width="3"/>
+  
+  <!-- Timeline Nodes -->
+  <circle cx="200" cy="120" r="10" fill="#70ad47"/>
+  <circle cx="200" cy="200" r="10" fill="#5b9bd5"/>
+  <circle cx="200" cy="280" r="10" fill="#ed7d31"/>
+  <circle cx="200" cy="360" r="10" fill="#f26f21"/>
+  <circle cx="200" cy="440" r="10" fill="#7030a0"/>
+  
+  <!-- Left Side Panels - Trend Descriptions with increased heights -->
+  <g transform="translate(80, 120)">
+    <rect x="-70" y="-30" width="140" height="60" rx="5" ry="5" fill="white" stroke="#70ad47" stroke-width="2"/>
+    <text x="0" y="-10" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#70ad47">Digital Transformation</text>
+    <text x="0" y="10" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">Industries adopting</text>
+    <text x="0" y="25" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">SaaS solutions</text>
+    <line x1="70" y1="0" x2="110" y2="0" stroke="#70ad47" stroke-width="2" stroke-dasharray="3,1"/>
+  </g>
+  
+  <g transform="translate(80, 200)">
+    <rect x="-70" y="-30" width="140" height="60" rx="5" ry="5" fill="white" stroke="#5b9bd5" stroke-width="2"/>
+    <text x="0" y="-10" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#5b9bd5">Custom Clothing Trend</text>
+    <text x="0" y="10" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">Rising demand for</text>
+    <text x="0" y="25" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">personalized garments</text>
+    <line x1="70" y1="0" x2="110" y2="0" stroke="#5b9bd5" stroke-width="2" stroke-dasharray="3,1"/>
+  </g>
+  
+  <g transform="translate(80, 280)">
+    <rect x="-70" y="-30" width="140" height="60" rx="5" ry="5" fill="white" stroke="#ed7d31" stroke-width="2"/>
+    <text x="0" y="-10" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#ed7d31">Unified Experiences</text>
+    <text x="0" y="10" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">Customers expect</text>
+    <text x="0" y="25" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">seamless interactions</text>
+    <line x1="70" y1="0" x2="110" y2="0" stroke="#ed7d31" stroke-width="2" stroke-dasharray="3,1"/>
+  </g>
+  
+  <g transform="translate(80, 360)">
+    <rect x="-70" y="-30" width="140" height="60" rx="5" ry="5" fill="white" stroke="#f26f21" stroke-width="2"/>
+    <text x="0" y="-10" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#f26f21">Supply Chain Focus</text>
+    <text x="0" y="10" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">Post-pandemic need for</text>
+    <text x="0" y="25" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">inventory visibility</text>
+    <line x1="70" y1="0" x2="110" y2="0" stroke="#f26f21" stroke-width="2" stroke-dasharray="3,1"/>
+  </g>
+  
+  <g transform="translate(80, 440)">
+    <rect x="-70" y="-30" width="140" height="60" rx="5" ry="5" fill="white" stroke="#7030a0" stroke-width="2"/>
+    <text x="0" y="-10" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#7030a0">Sustainability Trends</text>
+    <text x="0" y="10" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">Custom garments align</text>
+    <text x="0" y="25" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">with reduced waste</text>
+    <line x1="70" y1="0" x2="110" y2="0" stroke="#7030a0" stroke-width="2" stroke-dasharray="3,1"/>
+  </g>
+  
+  <!-- Right Side Panels - Market Statistics with increased heights -->
+  <g transform="translate(320, 120)">
+    <rect x="-70" y="-30" width="140" height="60" rx="5" ry="5" fill="white" stroke="#70ad47" stroke-width="2"/>
+    <text x="0" y="-10" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">85%</text>
+    <text x="0" y="10" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">of SMBs transitioning to</text>
+    <text x="0" y="25" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">digital management</text>
+    <line x1="-70" y1="0" x2="-110" y2="0" stroke="#70ad47" stroke-width="2" stroke-dasharray="3,1"/>
+  </g>
+  
+  <g transform="translate(320, 200)">
+    <rect x="-70" y="-30" width="140" height="60" rx="5" ry="5" fill="white" stroke="#5b9bd5" stroke-width="2"/>
+    <text x="0" y="-10" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">11.2%</text>
+    <text x="0" y="10" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">annual growth in</text>
+    <text x="0" y="25" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">custom clothing</text>
+    <line x1="-70" y1="0" x2="-110" y2="0" stroke="#5b9bd5" stroke-width="2" stroke-dasharray="3,1"/>
+  </g>
+  
+  <g transform="translate(320, 280)">
+    <rect x="-70" y="-30" width="140" height="60" rx="5" ry="5" fill="white" stroke="#ed7d31" stroke-width="2"/>
+    <text x="0" y="-10" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">73%</text>
+    <text x="0" y="10" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">of consumers prefer</text>
+    <text x="0" y="25" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">integrated experiences</text>
+    <line x1="-70" y1="0" x2="-110" y2="0" stroke="#ed7d31" stroke-width="2" stroke-dasharray="3,1"/>
+  </g>
+  
+  <g transform="translate(320, 360)">
+    <rect x="-70" y="-30" width="140" height="60" rx="5" ry="5" fill="white" stroke="#f26f21" stroke-width="2"/>
+    <text x="0" y="-10" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">92%</text>
+    <text x="0" y="10" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">of businesses prioritize</text>
+    <text x="0" y="25" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">inventory visibility</text>
+    <line x1="-70" y1="0" x2="-110" y2="0" stroke="#f26f21" stroke-width="2" stroke-dasharray="3,1"/>
+  </g>
+  
+  <g transform="translate(320, 440)">
+    <rect x="-70" y="-30" width="140" height="60" rx="5" ry="5" fill="white" stroke="#7030a0" stroke-width="2"/>
+    <text x="0" y="-10" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">68%</text>
+    <text x="0" y="10" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">of shoppers consider</text>
+    <text x="0" y="25" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">sustainability important</text>
+    <line x1="-70" y1="0" x2="-110" y2="0" stroke="#7030a0" stroke-width="2" stroke-dasharray="3,1"/>
+  </g>
+  
+  <!-- Perfect Timing Arrow -->
+  <g transform="translate(200, 490)">
+    <rect x="-100" y="-15" width="200" height="30" rx="15" ry="15" fill="#2c3e50" opacity="0.8"/>
+    <text x="0" y="5" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Perfect Market Timing</text>
+  </g>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="300" fill="#f8f9fa" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Order Processing Workflow</text>
+  
+  <!-- Flow steps -->
+  <!-- Order Creation -->
+  <rect x="50" y="70" width="120" height="60" fill="#4472c4" rx="10" ry="10" opacity="0.8" />
+  <text x="110" y="105" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Order Creation</text>
+  
+  <!-- Measurements -->
+  <rect x="210" y="70" width="120" height="60" fill="#4472c4" rx="10" ry="10" opacity="0.8" />
+  <text x="270" y="105" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Measurements</text>
+  
+  <!-- Material Selection -->
+  <rect x="370" y="70" width="120" height="60" fill="#4472c4" rx="10" ry="10" opacity="0.8" />
+  <text x="430" y="105" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Material Selection</text>
+  
+  <!-- Production -->
+  <rect x="530" y="70" width="120" height="60" fill="#4472c4" rx="10" ry="10" opacity="0.8" />
+  <text x="590" y="105" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Production</text>
+  
+  <!-- Delivery -->
+  <rect x="690" y="70" width="60" height="60" fill="#4472c4" rx="10" ry="10" opacity="0.8" />
+  <text x="720" y="105" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Delivery</text>
+  
+  <!-- Arrows -->
+  <path d="M170,100 L210,100" stroke="#333" stroke-width="2" fill="none" />
+  <polygon points="210,100 200,95 200,105" fill="#333" />
+  
+  <path d="M330,100 L370,100" stroke="#333" stroke-width="2" fill="none" />
+  <polygon points="370,100 360,95 360,105" fill="#333" />
+  
+  <path d="M490,100 L530,100" stroke="#333" stroke-width="2" fill="none" />
+  <polygon points="530,100 520,95 520,105" fill="#333" />
+  
+  <path d="M650,100 L690,100" stroke="#333" stroke-width="2" fill="none" />
+  <polygon points="690,100 680,95 680,105" fill="#333" />
+  
+  <!-- Customer engagement touchpoints -->
+  <rect x="50" y="180" width="700" height="40" fill="#70ad47" rx="10" ry="10" opacity="0.7" />
+  <text x="400" y="205" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Customer Engagement Touchpoints</text>
+  
+  <!-- Customer touchpoint connections -->
+  <line x1="110" y1="130" x2="110" y2="180" stroke="#70ad47" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="270" y1="130" x2="270" y2="180" stroke="#70ad47" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="430" y1="130" x2="430" y2="180" stroke="#70ad47" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="590" y1="130" x2="590" y2="180" stroke="#70ad47" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="720" y1="130" x2="720" y2="180" stroke="#70ad47" stroke-width="2" stroke-dasharray="5,3" />
+  
+  <!-- System notifications -->
+  <rect x="50" y="250" width="700" height="30" fill="#ed7d31" rx="8" ry="8" opacity="0.7" />
+  <text x="400" y="270" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Automated Status Updates &amp; Notifications at Each Stage</text>
+  
+  <!-- Notification connections -->
+  <line x1="110" y1="220" x2="110" y2="250" stroke="#ed7d31" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="270" y1="220" x2="270" y2="250" stroke="#ed7d31" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="430" y1="220" x2="430" y2="250" stroke="#ed7d31" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="590" y1="220" x2="590" y2="250" stroke="#ed7d31" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="720" y1="220" x2="720" y2="250" stroke="#ed7d31" stroke-width="2" stroke-dasharray="5,3" />
+</svg>

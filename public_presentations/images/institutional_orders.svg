@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="450" fill="#f8f9fa" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Institutional Order Management</text>
+  <text x="400" y="55" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">School Uniform Order Process &amp; Student Tracking</text>
+  
+  <!-- Main flow -->
+  <!-- Institution Profile -->
+  <rect x="50" y="100" width="150" height="70" fill="#4472c4" rx="8" ry="8" opacity="0.8" />
+  <text x="125" y="130" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Institution Profile</text>
+  <text x="125" y="150" font-family="Arial" font-size="10" text-anchor="middle" fill="white">School Information &amp; Config</text>
+  
+  <!-- Student Roster -->
+  <rect x="50" y="220" width="150" height="70" fill="#5b9bd5" rx="8" ry="8" opacity="0.7" />
+  <text x="125" y="250" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Student Roster</text>
+  <text x="125" y="270" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Individual Student Records</text>
+  
+  <!-- Uniform Specifications -->
+  <rect x="250" y="100" width="150" height="70" fill="#4472c4" rx="8" ry="8" opacity="0.8" />
+  <text x="325" y="130" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Uniform Specifications</text>
+  <text x="325" y="150" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Styles, Materials, Standards</text>
+  
+  <!-- Measurement Collection -->
+  <rect x="250" y="220" width="150" height="70" fill="#5b9bd5" rx="8" ry="8" opacity="0.7" />
+  <text x="325" y="250" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Measurement Collection</text>
+  <text x="325" y="270" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Per Student, ID Tagged</text>
+  
+  <!-- Production Management -->
+  <rect x="450" y="100" width="150" height="70" fill="#4472c4" rx="8" ry="8" opacity="0.8" />
+  <text x="525" y="130" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Bulk Order Creation</text>
+  <text x="525" y="150" font-family="Arial" font-size="10" text-anchor="middle" fill="white">RFQ and Order Processing</text>
+  
+  <!-- Individual Tracking -->
+  <rect x="450" y="220" width="150" height="70" fill="#5b9bd5" rx="8" ry="8" opacity="0.7" />
+  <text x="525" y="250" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Individual Tracking</text>
+  <text x="525" y="270" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Student-Specific Progress</text>
+  
+  <!-- Quality Control -->
+  <rect x="650" y="100" width="150" height="70" fill="#4472c4" rx="8" ry="8" opacity="0.8" />
+  <text x="725" y="130" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Delivery Management</text>
+  <text x="725" y="150" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Sorting and Distribution</text>
+  
+  <!-- Distribution -->
+  <rect x="650" y="220" width="150" height="70" fill="#5b9bd5" rx="8" ry="8" opacity="0.7" />
+  <text x="725" y="250" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Student Distribution</text>
+  <text x="725" y="270" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Per-Student Handout</text>
+  
+  <!-- Flow arrows -->
+  <path d="M200,135 L250,135" stroke="#333" stroke-width="2" fill="none" />
+  <polygon points="250,135 240,130 240,140" fill="#333" />
+  
+  <path d="M400,135 L450,135" stroke="#333" stroke-width="2" fill="none" />
+  <polygon points="450,135 440,130 440,140" fill="#333" />
+  
+  <path d="M600,135 L650,135" stroke="#333" stroke-width="2" fill="none" />
+  <polygon points="650,135 640,130 640,140" fill="#333" />
+  
+  <path d="M125,170 L125,220" stroke="#333" stroke-width="2" fill="none" />
+  <polygon points="125,220 120,210 130,210" fill="#333" />
+  
+  <path d="M325,170 L325,220" stroke="#333" stroke-width="2" fill="none" />
+  <polygon points="325,220 320,210 330,210" fill="#333" />
+  
+  <path d="M525,170 L525,220" stroke="#333" stroke-width="2" fill="none" />
+  <polygon points="525,220 520,210 530,210" fill="#333" />
+  
+  <path d="M725,170 L725,220" stroke="#333" stroke-width="2" fill="none" />
+  <polygon points="725,220 720,210 730,210" fill="#333" />
+  
+  <path d="M200,255 L250,255" stroke="#333" stroke-width="2" fill="none" />
+  <polygon points="250,255 240,250 240,260" fill="#333" />
+  
+  <path d="M400,255 L450,255" stroke="#333" stroke-width="2" fill="none" />
+  <polygon points="450,255 440,250 440,260" fill="#333" />
+  
+  <path d="M600,255 L650,255" stroke="#333" stroke-width="2" fill="none" />
+  <polygon points="650,255 640,250 640,260" fill="#333" />
+  
+  <!-- Student identification throughout -->
+  <rect x="50" y="340" width="700" height="70" fill="#f0f0f0" rx="8" ry="8" stroke="#333" stroke-width="1" />
+  
+  <!-- Student Records -->
+  <rect x="80" y="360" width="100" height="40" fill="#70ad47" rx="5" ry="5" opacity="0.7" />
+  <text x="130" y="380" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Student Records</text>
+  <text x="130" y="390" font-family="Arial" font-size="8" text-anchor="middle" fill="white">Name, ID, Class, Details</text>
+  
+  <!-- Measurement Records -->
+  <rect x="230" y="360" width="100" height="40" fill="#70ad47" rx="5" ry="5" opacity="0.7" />
+  <text x="280" y="380" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Measurement Records</text>
+  <text x="280" y="390" font-family="Arial" font-size="8" text-anchor="middle" fill="white">Tagged with Student ID</text>
+  
+  <!-- Production Tracking -->
+  <rect x="380" y="360" width="100" height="40" fill="#70ad47" rx="5" ry="5" opacity="0.7" />
+  <text x="430" y="380" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Production Tracking</text>
+  <text x="430" y="390" font-family="Arial" font-size="8" text-anchor="middle" fill="white">QR/Barcode per Student</text>
+  
+  <!-- QC Verification -->
+  <rect x="530" y="360" width="100" height="40" fill="#70ad47" rx="5" ry="5" opacity="0.7" />
+  <text x="580" y="380" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">QC Verification</text>
+  <text x="580" y="390" font-family="Arial" font-size="8" text-anchor="middle" fill="white">Match Item to Student</text>
+  
+  <!-- Delivery Confirmation -->
+  <rect x="680" y="360" width="100" height="40" fill="#70ad47" rx="5" ry="5" opacity="0.7" />
+  <text x="730" y="380" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Delivery Confirmation</text>
+  <text x="730" y="390" font-family="Arial" font-size="8" text-anchor="middle" fill="white">Student Receipt</text>
+  
+  <!-- Horizontal line connecting them all -->
+  <line x1="130" y1="340" x2="130" y2="360" stroke="#70ad47" stroke-width="2" />
+  <line x1="280" y1="340" x2="280" y2="360" stroke="#70ad47" stroke-width="2" />
+  <line x1="430" y1="340" x2="430" y2="360" stroke="#70ad47" stroke-width="2" />
+  <line x1="580" y1="340" x2="580" y2="360" stroke="#70ad47" stroke-width="2" />
+  <line x1="730" y1="340" x2="730" y2="360" stroke="#70ad47" stroke-width="2" />
+  
+  <line x1="130" y1="340" x2="730" y2="340" stroke="#70ad47" stroke-width="2" />
+  
+  <!-- Identification label -->
+  <text x="400" y="430" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">Student Identity Preserved Throughout Process</text>
+</svg>

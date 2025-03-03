@@ -1,0 +1,63 @@
+<svg width="900" height="500" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="500" fill="#1a1a2e" rx="10" ry="10"/>
+  
+  <!-- Order tracking workflow -->
+  <g transform="translate(75, 250)">
+    <!-- Stage 1: Order -->
+    <circle cx="0" cy="0" r="40" fill="#4361ee"/>
+    <text x="0" y="5" font-family="Arial" font-size="14" fill="#ffffff" text-anchor="middle">Order</text>
+    <text x="0" y="70" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">Created</text>
+  </g>
+  
+  <g transform="translate(225, 250)">
+    <!-- Stage 2: Measure -->
+    <circle cx="0" cy="0" r="40" fill="#4361ee"/>
+    <text x="0" y="5" font-family="Arial" font-size="14" fill="#ffffff" text-anchor="middle">Measure</text>
+    <text x="0" y="70" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">Feb 20</text>
+  </g>
+  
+  <g transform="translate(375, 250)">
+    <!-- Stage 3: Cut -->
+    <circle cx="0" cy="0" r="40" fill="#4361ee"/>
+    <text x="0" y="5" font-family="Arial" font-size="14" fill="#ffffff" text-anchor="middle">Cut</text>
+    <text x="0" y="70" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">Feb 22</text>
+  </g>
+  
+  <g transform="translate(525, 250)">
+    <!-- Stage 4: Sew -->
+    <circle cx="0" cy="0" r="40" fill="#4cc9f0"/>
+    <text x="0" y="5" font-family="Arial" font-size="14" fill="#ffffff" text-anchor="middle">Sew</text>
+    <text x="0" y="70" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">In Progress</text>
+  </g>
+  
+  <g transform="translate(675, 250)">
+    <!-- Stage 5: Fit -->
+    <circle cx="0" cy="0" r="40" fill="#a0a0a0" opacity="0.5"/>
+    <text x="0" y="5" font-family="Arial" font-size="14" fill="#ffffff" text-anchor="middle">Fit</text>
+    <text x="0" y="70" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">Mar 1</text>
+  </g>
+  
+  <g transform="translate(825, 250)">
+    <!-- Stage 6: Deliver -->
+    <circle cx="0" cy="0" r="40" fill="#a0a0a0" opacity="0.5"/>
+    <text x="0" y="-5" font-family="Arial" font-size="14" fill="#ffffff" text-anchor="middle">Deliver</text>
+    <text x="0" y="70" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">Mar 5</text>
+  </g>
+  
+  <!-- Connection lines -->
+  <line x1="45" y1="250" x2="185" y2="250" stroke="#ffffff" stroke-width="3"/>
+  <line x1="265" y1="250" x2="335" y2="250" stroke="#ffffff" stroke-width="3"/>
+  <line x1="415" y1="250" x2="485" y2="250" stroke="#ffffff" stroke-width="3"/>
+  <line x1="565" y1="250" x2="635" y2="250" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="715" y1="250" x2="785" y2="250" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Progress bar -->
+  <rect x="75" y="350" width="750" height="30" rx="15" ry="15" fill="#ffffff" opacity="0.1" stroke="#ffffff" stroke-width="2"/>
+  <rect x="75" y="350" width="450" height="30" rx="15" ry="15" fill="#4cc9f0" opacity="0.8"/>
+  <text x="450" y="370" font-family="Arial" font-size="14" fill="#ffffff" text-anchor="middle">60% Complete</text>
+  
+  <!-- Title text -->
+  <text x="450" y="80" font-family="Arial" font-size="36" fill="#ffffff" text-anchor="middle" font-weight="bold">Real-time Order Tracking</text>
+  <text x="450" y="120" font-family="Arial" font-size="24" fill="#ffffff" text-anchor="middle">For both customers and tailors</text>
+</svg>
